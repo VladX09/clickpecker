@@ -22,11 +22,11 @@ Run::
  docker-compose up -d --build
 
 After building the images you will get two containers:
-    * ``device_manager`` - contains running clickpecker-device-manager server. This server is accessible from ``127.0.0.1/5000``.
+    * ``device_manager`` - contains running *clickpecker-device-manager* server. It is accessible from ``127.0.0.1/5000``.
     * ``pytest_worker`` - container to run your tests. Default working directory contains ``clickpecker-pytest/examples/``, you can change this in docker-compose.yml
 
-To launch tests in the worker, run::
+To launch your tests in the worker, run::
 
-  docker exec pytest_worker pytest
+  docker exec pytest_worker pytest [...]
 
-(Be shure, that containers are running)
+(Be sure, that containers are running)
