@@ -1,0 +1,21 @@
+version: "3"
+services:
+  device_manager:
+    build:
+      context: ./clickpecker-device-manager
+    volumes:
+      - "./clickpecker-device-manager:/srv"
+    network_mode: "host"
+    container_name: device_manager 
+
+  pytest_worker:
+    build:
+      context: ./clickpecker-library
+    volumes:
+      - "./clickpecker-library:/clickpecker"
+      - "./clickpecker-pytest:/clickpecker-pytest"
+      - "./clickpecker-pytest/examples:/workdir"
+    depends_on:
+      - device_manager
+    container_name: pytest_worker
+    network_mode: "host"
