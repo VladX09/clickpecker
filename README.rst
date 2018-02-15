@@ -8,9 +8,9 @@ Introduction
 This bundle allows you to launch the latest stable version of Clickpecker.
 
 Content:
-    * Clickpecker library (`repo <>`_)(`docs <>`_)
-    * Clickpecker device manager (`repo <>`_)(`docs <>`_)
-    * Clickpecker pytest plugin (`repo <>`_)
+    * Clickpecker library (`repo <https://github.com/VladX09/clickpecker-library>`_)(`docs <http://clickpecker-library.readthedocs.io/en/latest/>`_)
+    * Clickpecker device manager (`repo <https://github.com/VladX09/clickpecker-device-manager>`_)(`docs <http://clickpecker-device-manager.readthedocs.io/en/latest/>`_)
+    * Clickpecker pytest plugin (`repo <https://github.com/VladX09/clickpecker-pytest>`_)
 
 Launching
 =========
