@@ -1,0 +1,9 @@
+[submodule "clickpecker-device-manager"]
+	path = clickpecker-device-manager
+	url = https://github.com/VladX09/clickpecker-device-manager.git
+[submodule "clickpecker-library"]
+	path = clickpecker-library
+	url = https://github.com/VladX09/clickpecker-library.git
+[submodule "clickpecker-pytest"]
+	path = clickpecker-pytest
+	url = https://github.com/VladX09/clickpecker-pytest.git
