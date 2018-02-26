@@ -1,16 +1,14 @@
 version: "3"
 services:
   device_manager:
-    build:
-      context: ./clickpecker-device-manager
+    image: vladx09/clickpecker-device-manager:latest_nosrc
     volumes:
       - "./clickpecker-device-manager:/srv"
     network_mode: "host"
     container_name: device_manager 
 
   pytest_worker:
-    build:
-      context: ./clickpecker-library
+    image: vladx09/clickpecker-library:latest_nosrc
     volumes:
       - "./clickpecker-library:/clickpecker"
       - "./clickpecker-pytest:/clickpecker-pytest"
